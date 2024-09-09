@@ -1,0 +1,37 @@
+{
+  "name": "react-friends",
+  "version": "1.0.0",
+  "description": "A social networking platform for connecting with friends, sharing updates, and discovering new connections.",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"test\": \"npm run lint && npm run jest\"",
+    "start": "react-scripts start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.9",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0",
+    "react-scripts": "^5.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
