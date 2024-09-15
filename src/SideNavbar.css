@@ -1,0 +1,52 @@
+/* Ensure the top navbar spans the full width */
+.top-navbar {
+  width: 100%;
+  position: fixed; /* Fixed to the top of the page */
+  top: 0;
+  left: 0;
+  background-color: #007bff; /* Example background color */
+  color: #fff; /* Example text color */
+  padding: 10px 20px;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.logo-image {
+    width: 90px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1300px; /* Space between logo and other elements */
+}
+
+/* Container to ensure layout beneath the top navbar */
+.landing-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; /* Ensure the top navbar stays on top */
+   /* Adjust this value based on the height of the top navbar */
+}
+
+/* Side navbar styles */
+.side-navbar {
+    position: fixed;
+    top: 50px; /* Start below the top navbar */
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 50px); /* Full height minus top navbar height */
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-right: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+    z-index: 999; 
+}
+
+/* Ensure content area is aligned correctly */
+.content-area {
+  margin-left: 200px; /* Space for the sidebar */
+  margin-top: -20px; /* Space for the top navbar */
+  width: calc(100% - 200px); /* Full width minus sidebar */
+  padding: 20px; /* Padding for content spacing */
+}
+
+.no-sidebar .content {
+  margin-left: 0;
+}

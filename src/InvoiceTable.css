@@ -1,0 +1,41 @@
+.invoice-table-container {
+    margin-left: 240px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .invoice-table th, .invoice-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .invoice-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .invoice-table tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  .export-buttons{
+    margin-left: 950px;
+    margin-bottom: 10px;
+  }
+  .search-container{
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
