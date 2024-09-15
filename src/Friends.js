@@ -73,6 +73,8 @@ function FriendList() {
       .catch(error => console.error(error));
   };
 
+  
+
   const handleShow = (friendId) => {
     axios.get(`http://localhost:3000/api/v1/friends/${friendId}`)
       .then(response => {
@@ -175,6 +177,15 @@ function FriendList() {
     } catch (error) {
       console.error('Failed to verify Twitter handle:', error);
       return false; // Return false if there's an error or the user is not found
+    }
+  };
+
+  const handleFriendClick = (friendName) => {
+    if (friendName) { // Ensure friendName is not undefined
+        console.log(`Navigating to Orders page with friend: ${friendName}`); // Debug log
+        navigate(`/orders?friend=${encodeURIComponent(friendName)}`); // Properly encode friend name
+    } else {
+        console.error('Friend name is undefined');
     }
   };
 
@@ -327,6 +338,10 @@ function FriendList() {
     }
   };
 
+  // const handleCreateOrder = (friendId) => {
+  //   navigate(`/create-order?friendId=${friendId}`); // Navigate to the order creation page
+  // };
+
 
   return (
     <div className="friend-list-container">
@@ -432,7 +447,7 @@ function FriendList() {
                               }}
                             />
                           )}
-                          <span>{`${friend?.first_name || ''} ${friend?.last_name || ''}`}</span>
+                          <span onClick={() => handleFriendClick(`${friend?.first_name || ''} ${friend?.last_name || ''}`)} style={{ cursor: 'pointer', color: '#007bff' }}>{`${friend?.first_name || ''} ${friend?.last_name || ''}`}</span>
                         </div>
                       </td>
 

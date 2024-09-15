@@ -10,7 +10,7 @@
 
   .button-container {
     position: absolute;
-    /* top: 400px; */
+    top: 30px;
     right: 0;
     padding: 10px;
     display: flex;
@@ -32,7 +32,7 @@
   
   .add-friend-btn {
     position: fixed;
-    bottom: 620px;
+    bottom: 655px;
     right: 20px;
     padding: 10px 20px;
     background-color: #007bff;
@@ -156,6 +156,7 @@
 .table-wrapper {
     position: relative;
     margin-bottom: 20px;
+    margin-left: 220px;
   }
   
   .table-wrapper .pagination {

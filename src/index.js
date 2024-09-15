@@ -6,6 +6,9 @@ import FriendList from './Friends';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 import SignOut from './SignOut';
+import Orders from './Orders';
+import CreateOrder from './CreateOrder';
+import InvoiceTable from './InvoiceTable';
 import ForgotPassword from './ForgotPassword';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,7 +24,10 @@ ReactDOM.render(
           <Route path="SignUp" element={<SignUp />} />
           <Route path="friends" element={<FriendList />} />
           <Route path="SignOut" element={<SignOut />} /> 
+          <Route path="orders" element={<Orders />} />
+          <Route path="/orders/new" element={<CreateOrder />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/invoices" element={<InvoiceTable />} />
         </Route>
       </Routes>
     </React.StrictMode>
